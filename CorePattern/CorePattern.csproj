@@ -27,6 +27,10 @@
     <PackageReference Include="BuildBundlerMinifier" Version="2.9.406" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="NWebsec.AspNetCore.Core" Version="2.0.0" />
+    <PackageReference Include="NWebsec.AspNetCore.Middleware" Version="2.0.0" />
+    <PackageReference Include="NWebsec.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="NWebsec.AspNetCore.Mvc.TagHelpers" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>

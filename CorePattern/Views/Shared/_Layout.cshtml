@@ -47,5 +47,13 @@
         </footer>
     </div> 
     @RenderSection("Scripts", required: false)
+
+    <script nws-csp-add-nonce="true">
+        function someFunction() {
+            alert('Nonce added');
+        }
+    </script>
+
 </body>
 </html>
+

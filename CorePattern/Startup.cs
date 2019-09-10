@@ -49,7 +49,19 @@ namespace CorePattern
             }
 
             app.UseHttpsRedirection();
+
+            // Security - Registered before static files to always set header
+            app.UseHsts(hsts => hsts.MaxAge(365));
+            app.UseXContentTypeOptions();
+            app.UseReferrerPolicy(opts => opts.NoReferrer());
+
             app.UseStaticFiles();
+
+            // Security - Registered after static files, for dynamic content.
+            app.UseXXssProtection(options => options.EnabledWithBlockMode());
+            app.UseXfo(xfo => xfo.Deny());
+            app.UseRedirectValidation();
+
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>
