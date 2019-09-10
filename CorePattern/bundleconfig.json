@@ -1,0 +1,22 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site-core.min.css",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site-core.min.js",
+    "inputFiles": [      
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js",
+      "wwwroot/js/site.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]
